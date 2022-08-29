@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>target sselectors</title>
+  <style>
+    /* ------------------------------------iterartion-2 */
+    /* all selectors */
+    div p {
+      background-color: violet;
+    }
+    /* direct child selector */
+    div > p {
+      background-color: aqua;
+    }
+    /* next siblling */
+    div + p{
+      background-color: goldenrod;
+    }
+
+    /* atrribute selectors */
+    a[target ='_self'] {
+      background-color: black;
+    }
+    a[target ='_blank'] {
+      background-color: black;
+    }
+
+    /*  select with  specific attribute value */
+    input[type= 'text'],
+    input[type= 'email'] {
+      width: 100%;
+      padding: .5rem;
+    }
+
+/* ------------------------------------------------------iteration-1 */
+
+    /* all child selectors in parent div*/
+    div p {
+      background-color: blue;
+    }
+/* direct child selectors */
+    div > p {
+      background-color: orange;
+    }
+    /* next siblling selectors */
+    div + p {
+      background: yellow;
+    }
+    /* using attribute selectors */
+    a[target =_self] {
+      background: violet;
+    }
+    a[target =_blank] {
+      background: rgb(38, 131, 61);
+    }
+
+    /* specific attribute values */
+    input[type='text'] ,
+    input[type='email']
+    {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, facilis?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, facilis?</p>
+    <div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, odio.</p>
+    </div>
+    <ul>
+      <li>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, dolores.</p>
+      </li>
+    </ul>
+  </div>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, non.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, minima!</p>
+
+<a href="#">link 1</a>
+<a href="#" target="_self">link 2</a>
+<a href="https://google.com" target="_blank">google</a>
+<br>
+<br>
+
+<input type="text" name="Name" id="Name" placeholder="Name">
+<input type="email" name="Email" id="Email" placeholder="Email">
+<button type="submit">Submit</button>
+
+</body>
+
+</html>

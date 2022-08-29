@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>before and after pseudo selectors</title>
+  <style>
+/* iteration-2 */
+/* .is_required::after {
+  content: '*';
+  margin: 0 .5rem;
+}
+.is_required::before {
+  content: '*';
+  margin-right: .5rem;
+} */
+
+/* before psudo selector us in overlay */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #333;
+  color: #fff;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+header::before {
+  content: '';
+  background: url(./50-Beautiful-and-Minimalist-Presentation-Backgrounds-05.jpg) no-repeat center center/cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  z-index: 10;  
+}
+
+    /* iteration-1 */
+    /* body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #333;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+    }
+    header::before {
+      content: '';
+      background: url(./50-Beautiful-and-Minimalist-Presentation-Backgrounds-05.jpg) no-repeat center center/cover;
+      position: absolute;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    } */
+    /* #test {   id have higher precedence
+    color: green;
+    }
+    h2 { lower precedence
+      color: blue;
+    }
+    .heading  less then id precedence{
+      color: yellow;
+    }
+     */
+    /* .is_required::after {
+      content: '*';
+      margin-left: 5px;
+      color: green;
+    } */
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Our Website</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vero aliquid autem id sint, optio eos laborum
+      laudantium repellat veritatis.</p>
+  </header>
+
+  <section>
+    <h3>Lorem, ipsum dolor.</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi suscipit reprehenderit, voluptatum quaerat
+      optio quam ipsum! Adipisci porro eaque tenetur, reiciendis, perspiciatis, facilis dolorem eius quisquam voluptates
+      est corporis nesciunt?</p>
+  </section>
+
+
+  <!-- <div>
+  <label class="is_required" for="name">Name</label>
+  <input type="text">
+</div>   -->
+<!-- <h2 id="test" class="heading">hello world</h2> -->
+
+</body>
+
+</html>

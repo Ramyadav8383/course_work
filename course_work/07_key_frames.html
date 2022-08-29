@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key frames</title>
+  <style>
+    /* iteration-2 */
+    body {
+      background-color: rgb(104, 99, 99);
+    }
+    .box{
+      position: relative;
+      background: white;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      animation: animate 1s forwards 1s ease-in ;
+    }
+
+    @keyframes animate {
+      from {
+        top: 0;
+      }
+      to{
+        width: 500px;
+        background-color: blueviolet;
+        top: 200px;
+      }
+    }
+    /* iteration-1 */
+    /* body {
+      background-color: #333;
+    }
+    .box{
+      position: relative;
+      background: white;
+      width: 200px;
+      height: 200px;
+      animation: animate 3s forwards 1s ease-in ;
+    }
+
+    @keyframes animate {
+      from {
+        top: 0;
+      }
+      to{
+        width: 600px;
+        background-color: blueviolet;
+        top: 300px;
+      }
+    } */
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

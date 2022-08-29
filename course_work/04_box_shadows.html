@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box shadows</title>
+  <style>
+/* iteration-2 */
+body {
+  /* background-color: #333; */
+  color: #fff;
+}
+.container {
+  display: flex;
+  text-align: center;
+}
+.box {
+  background: crimson;
+  padding: 2rem;
+  margin: 2rem 1rem;
+  /* offset-x |offset-y|color */
+  box-shadow: 10px 10px green;
+  /* offset-x |offset-y|blur-radius|color */
+  box-shadow: 10px 10px 20px green;
+  /* offset-x |offset-y|blur-radius|spread-radius|color */
+  box-shadow: 10px 10px 20px 10px green;
+  /* inset|offset-x|offset-y|color */
+  box-shadow: inset 10px 10px green;
+  /* inset|offset-x|offset-y|blur-radius|color */
+  box-shadow: inset 10px 10px 20px green;
+  /* multiple shadow */
+  box-shadow: 20px 20px 20px rgb(37, 36, 36, 0.6) ;
+}
+
+
+
+
+
+
+
+
+    /* iteration-1 */
+    /* body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .container {
+      display: flex;
+    }
+    .box {
+      padding: 1rem;
+      margin: 1rem;
+      background-color: coral;
+      color: #fff;
+      border-radius: 5px; */
+      /* offset-x offset-y color */
+      /* box-shadow: 10px 10px gray; */
+      /* offset-x offset-y blur-radius color */
+      /* box-shadow: 10px 10px 20px burlywood; */
+      /* offset-x offset-y blur-radius spread-radius color */
+      /* box-shadow: 10px 10px 20px 3px grey ; */
+      /* inset |offset-x |offset-y|color */
+      /* box-shadow: inset 3px 3px rgb(38, 73, 73); */
+      /* inset |offset-x |offset-y|blur-radius|color */
+      /* box-shadow: inset 3px 3px 5px rgb(38, 73, 73); */
+      /* multiple shadows */
+      /* box-shadow: inset 3px 3px 5px 3px rgb(38, 73, 73) ,inset -3px -3px 5px 3px rgb(38, 73, 73); */
+    /* } */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h3>heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, excepturi.</p>
+    </div>
+    <div class="box">
+      <h3>heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, excepturi.</p>
+    </div>
+    <div class="box">
+      <h3>heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, excepturi.</p>
+    </div>
+  </div>
+</body>
+</html>
